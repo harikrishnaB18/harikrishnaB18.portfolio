@@ -3,56 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Harikrishna Bommisetti - DevOps Engineer</title>
+  <title>Harikrishna Bommisetti - Associate DevOps Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary-color: #2d3e50;
+      --accent-color: #007acc;
+      --bg-light: #f4f6f9;
+      --white: #fff;
+      --text-dark: #333;
+    }
+
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
-      background-color: #f4f6f9;
-      color: #333;
-      padding: 20px;
+      padding: 0;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
     }
 
     header {
-      background-color: #2d3e50;
-      color: white;
-      padding: 20px;
+      background-color: var(--primary-color);
+      color: var(--white);
+      padding: 40px 20px;
       text-align: center;
-      border-radius: 10px;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
     }
 
     section {
-      background: white;
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      background: var(--white);
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 900px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
 
-    h1, h2 {
-      margin: 0 0 15px 0;
+    h2 {
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 8px;
+      margin-bottom: 20px;
     }
 
     ul {
       padding-left: 20px;
     }
 
+    ul li {
+      margin-bottom: 10px;
+    }
+
     a {
-      color: #007acc;
+      color: var(--accent-color);
       text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact p {
+      margin: 10px 0;
     }
 
     footer {
       text-align: center;
-      margin-top: 30px;
+      margin: 40px 0 20px;
       font-size: 0.9em;
       color: #777;
     }
 
-    .contact a {
-      display: inline-block;
-      margin-right: 10px;
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      section {
+        padding: 20px;
+        margin: 20px;
+      }
     }
   </style>
 </head>
@@ -60,7 +106,7 @@
 
 <header>
   <h1>Harikrishna Bommisetti</h1>
-  <p>DevOps & Cloud Engineer | AWS Certified | CI/CD | Kubernetes | Terraform</p>
+  <p>DevOps & AWS Cloud Engineer | AWS Certified | CI/CD | Kubernetes | Terraform</p>
 </header>
 
 <section>
@@ -75,7 +121,8 @@
     <li>Jenkins, GitHub Actions (CI/CD)</li>
     <li>Docker & Kubernetes</li>
     <li>Terraform & Infrastructure as Code</li>
-    <li>Git, GitHub, Linux (Ubuntu), Bash</li>
+    <li>Git, GitHub, Linux (Ubuntu), Shell</li>
+    <li>React Basics</li>
   </ul>
 </section>
 
@@ -90,12 +137,11 @@
 </section>
 
 <section>
-  <h2>📜 Certifications</h2>
+  <h2>📜 Certifications & Training</h2>
   <ul>
-    <li>Introduction to Kubernetes – Linux Foundation</li>
-    <li>Introduction to Jenkins – Linux Foundation</li>
-    <li>Introduction to GitOps – Linux Foundation</li>
-    <li>Introduction to DevOps & SRE – Linux Foundation</li>
+    <li>AWS Certified Cloud Practitioner</li>
+    <li>AWS Certified Solutions Architect – Associate</li>
+    <li>DevOps & AWS Hands-on Training – Naresh i Technologies, Hyderabad</li>
   </ul>
 </section>
 
